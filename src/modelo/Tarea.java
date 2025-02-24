@@ -17,7 +17,8 @@ public class Tarea implements Comparable<Tarea> {
         return switch (prioridad.toLowerCase()) {
             case "alta" -> 1; // Si la prioridad es alta, asigna el valor 1
             case "media" -> 2; // Si la prioridad es media, asigna el valor 2
-            default -> 3; // Si la prioridad es baja, asigna el valor 3
+            case "baja" -> 3; // Si la prioridad es baja, asigna el valor 3
+            default -> 4; // Por si hay error en la entrada
         };
     }
 
